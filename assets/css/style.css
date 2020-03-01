@@ -43,7 +43,7 @@ header{
     font-family: 'Raleway', sans-serif;
     border-right: hidden;
     text-transform: uppercase;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
 }
 
 .popular{
@@ -59,7 +59,7 @@ header{
     font-family: 'Raleway', sans-serif;
     border-left: hidden;
     text-transform: uppercase;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
 }
 
 .popular {

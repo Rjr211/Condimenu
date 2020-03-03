@@ -4,10 +4,13 @@
 @import "./cards.css";
 
 body{
+    padding-top: 6rem;
     font-size: 12px;
     height: 100%;
     width: 100%;
     font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 * {
@@ -19,11 +22,78 @@ body{
 
 header{
     height: 6rem;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index:1000;
+    box-shadow: rgba(0, 0, 0, 0.098) 0px 3px 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    padding: 0px 5%;
+    box-sizing: border-box;
 }
 
+.nav-items{
+    list-style: none;
+}
+
+.nav-items > li {
+    display: inline-block;
+    padding: 7px 5px;
+    font-size: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Raleway",sans-serif;
+    letter-spacing: 1px;
+}
+
+.nav-items > li > a {
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.nav-items > li > a:hover {
+    color: #152238;
+    
+}
+
+header > h1 {
+    margin-left: -4%;
+    text-transform: capitalize;
+}
+
+
+
+.signup{
+    width: 9rem;
+    height: 2.6rem;
+    outline: none;
+    border: none;
+    background-color: #800000;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: .9rem;
+}
+
+.signup:hover{
+    background-color: #790202;
+    cursor: pointer;
+}
+
+
+h1{
+    font-size: 2.2rem;
+    color: #152238;
+    font-family: 'Oswald' ;
+}
+
+
 .recent-popular{
-    width: 24rem;
-    height: 2.7rem;
+    width: 28rem;
+    height: 3.3rem;
     grid-area: button;
     margin: 20px auto 5px auto;
     display: flex;
@@ -33,33 +103,35 @@ header{
 .recent{
     height: 100%;
     font-weight: bold;
-    font-size: .7rem;
+    font-size: 12px;
     width: 50%;  
     text-align: center;
-    border:2px solid #6D95B3;
+    border:2px solid #152238;
     background-color:transperant;
     outline:none;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     border-right: hidden;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
+    color: #152238;
 }
 
 .popular{
     height: 100%;
-    font-weight: bolder;
-    font-size:.7rem;
+    font-weight: bold;
+    font-size: 12px;
     width: 50%;  
     text-align: center;
-    border:2px solid #6D95B3;
+    border:2px solid #152238;
     background-color:transperant;
     outline:none;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     border-left: hidden;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
+    color: #152238;
 }
 
 .popular {
@@ -67,7 +139,7 @@ header{
   }
   
   .popular:hover {
-    background-color: #6D95B3; 
+    background-color: #152238; 
     color: white;
   }
 
@@ -76,7 +148,7 @@ header{
   }
   
   .recent:hover {
-    background-color: #6D95B3; 
+    background-color: #152238; 
     color: white;
   }
 
@@ -92,8 +164,9 @@ header{
 }
 
 footer{
-    margin-top: 1rem;
-    background: linear-gradient(180deg, transparent 8%, rgba(206,206,206,1) 70%);
+    margin-top: 3.5rem;
+    background-color: #152238;
+    height: 8rem;
 }
 
 
@@ -103,12 +176,21 @@ footer{
     .container{
     display: flex;
     flex-direction:column;
-    border: 1px solid yellow;
     }
 
-    header{
-        border: 1px solid red;
+    .signup{
+        width: 6rem;
+        font-size: .8rem;
     }
+
+    header>h1{
+        font-size: 1.8rem;
+    }
+
+    .nav-items > li {
+        display: block;
+    }
+
     section{
         height: 28rem;
         padding: 0;
@@ -163,12 +245,10 @@ footer{
           "sec sec sec sec sec sec sec sec sec"
           "main main main main main main main main main"
           "ft ft ft ft   ft   ft   ft   ft   ft";
-        border: 1px solid yellow;;
         height: 100%;
         }
 
         header{
-            border: 1px solid red;
             grid-area: hd;
         }
 
@@ -234,7 +314,6 @@ footer{
         }
 
         header{
-            border: 1px solid red;
             grid-area: hd;
         }
         section{
@@ -273,7 +352,6 @@ footer{
     
         footer{
             bottom: 0;
-            height: 10rem;
             grid-area: ft;
         }
 

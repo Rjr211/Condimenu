@@ -44,7 +44,9 @@ border-radius: 5px;
     flex-direction: row;
     display: flex;
     justify-content: flex-start;
+    border-bottom: 1px solid #800000;
 }
+
 
 .card-title-section{
     height: 60%;
@@ -60,8 +62,12 @@ border-radius: 5px;
     }
 
     .card-avatar-name{
-        margin-top: .6rem;
+        color: grey;
+        margin-top: 1rem;
         margin-left: .5rem;
+        font-weight: 700;
+        font-family: "Raleway",sans-serif;
+        font-size: .75rem;
     }
 
     .card-title{

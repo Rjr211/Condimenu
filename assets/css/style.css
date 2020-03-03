@@ -2,6 +2,10 @@
 
 @import './section.css';
 @import "./cards.css";
+@import './footer.css';
+
+
+
 
 body{
     padding-top: 6rem;
@@ -163,11 +167,7 @@ h1{
     object-fit: cover;
 }
 
-footer{
-    margin-top: 3.5rem;
-    background-color: #152238;
-    height: 8rem;
-}
+
 
 
 
@@ -231,6 +231,37 @@ footer{
         height: 12rem;
     }
 
+    #footer-container{
+        flex-direction: column;
+    }
+
+    .social-footer {
+        padding-top: 10px;
+        display: block;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-links{
+        padding: 0 10px;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .form-footer {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+    }
+
+    .footer-contact{
+        display: block;
+        display: flex;
+        flex-direction: row;
+    }
+
+
 }
 
 /*Medium*/
@@ -290,12 +321,39 @@ footer{
 
         footer{
             bottom: 0;
-            height: 12rem;
             grid-area: ft;
+            height: 12rem;
         }
 
-
-
+        #footer-container{
+            flex-direction: column;
+        }
+    
+        .social-footer {
+            padding-top: 10px;
+            display: block;
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .social-links{
+            padding: 0 10px;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    
+        .form-footer {
+            display: block;
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 10px;
+        }
+    
+        .footer-contact{
+            display: block;
+            display: flex;
+            flex-direction: row;
+        }
 
 }
 /*large*/

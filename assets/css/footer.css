@@ -32,11 +32,11 @@ display: flex;
     }
 
 .social-links{
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
     color: #ffffff;
     display: inline-block;
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 #subscribe {
@@ -57,11 +57,12 @@ display: flex;
 }
 
 .footer-contact > *{
-    font-size: 1rem;
+    font-size: .9rem;
     color: #ffffff;
     display: inline-block;
     text-transform: uppercase;
     padding: 0 5px;
+    font-family: "Raleway",serif;
 }
 
 .footer-contact > a:hover {

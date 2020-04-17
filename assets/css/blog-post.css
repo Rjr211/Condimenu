@@ -1,0 +1,315 @@
+/*colors #6D95B3 #CFEBFF #B6E0FF #B38F5B #FFE1B5*/
+
+@import './section.css';
+@import './footer.css';
+@import './header.css';
+
+
+
+body{
+    padding-top: 6rem;
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+ }
+
+
+  .image-container-banner{
+      height: 100%;
+      width: 100%;
+  }
+
+.top-view-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+article{
+    grid-area: article;
+    display: grid;
+    margin: 1rem;
+    border: 2px solid red;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+/*Author section*/
+.author-section{
+    border: 2px solid yellow;
+    grid-area: author;
+    margin: 1rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.author-section > .author-avatar-section{
+    width: 5rem;
+}
+
+.author-avatar{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+.author-avatar-section > .author-name{
+    
+
+}
+
+.author-bio-section{
+    border: 2px solid violet;
+    width: 7rem;
+}
+
+
+
+.sample-text{
+    font-size: 1rem;
+}
+
+
+
+/*Mobile*/
+@media (max-width: 600px) {
+    .container{
+    display: flex;
+    flex-direction:column;
+    }
+
+    .signup{
+        width: 6rem;
+        font-size: .8rem;
+    }
+
+    header>h1{
+        font-size: 1.8rem;
+    }
+
+    .nav-items > li {
+        display: block;
+    }
+
+    section{
+        height: 28rem;
+        padding: 0;
+    }
+
+    .section-description{
+        width: 25rem;
+        height: 19rem;
+        top: 1.5rem;
+    }
+
+    .section-description-title{
+        font-size: 2rem;
+    }
+    
+    .section-description-text{
+        font-size: 13px;
+    }
+
+    main{
+        height: auto;
+        display: flex;
+        flex-direction:column;
+        
+    }
+
+    footer{
+        bottom: 0;
+        height: 12rem;
+    }
+
+    #footer-container{
+        flex-direction: column;
+    }
+
+    .social-footer {
+        padding-top: 10px;
+        display: block;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-links{
+        padding: 0 10px;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .form-footer {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+    }
+
+    .footer-contact{
+        display: block;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+
+/*Medium*/
+@media (min-width: 600px) and (max-width: 1100px){
+    .container{
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+          "hd hd hd hd hd hd hd hd hd"
+          "sec sec sec sec sec sec sec sec sec"
+          "main main main main main main main main main"
+          "ft ft ft ft   ft   ft   ft   ft   ft";
+        height: 100%;
+        }
+
+        header{
+            grid-area: hd;
+        }
+
+        section{
+            height: 30rem;
+            grid-area: sec;
+        }
+
+        .section-description{
+            top: 1rem;
+            height: 20rem;
+            width: 30rem;
+        }
+
+        .section-description-title{
+            font-size: 2.5rem;
+        }
+        
+        .section-description-text{
+            font-size: 14px;
+        }
+
+        main{
+            height: auto;
+            grid-area: main;
+            display: grid;
+            grid-template-areas: 
+            "author article article .";
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto auto auto;
+            grid-row-gap: 2rem;
+            grid-column-gap: .5rem;
+            padding-top: 5rem;
+        }
+   
+        article{
+            margin: 8px 8px 12px 8px;
+        }
+
+        footer{
+            bottom: 0;
+            grid-area: ft;
+            height: 12rem;
+        }
+
+        #footer-container{
+            flex-direction: column;
+        }
+    
+        .social-footer {
+            padding-top: 10px;
+            display: block;
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .social-links{
+            padding: 0 10px;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    
+        .form-footer {
+            display: block;
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 10px;
+        }
+    
+        .footer-contact{
+            display: block;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .author-section{
+            border: 2px solid yellow;
+            grid-area: author;
+            margin: 1rem;
+            height: 18rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+}
+/*large*/
+@media (min-width: 1101px){
+    .container{
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+          "hd hd hd hd hd hd hd hd hd"
+          "sec sec sec sec sec sec sec sec sec"
+          "main main main main main main main main main"
+          "ft ft ft ft ft ft ft ft ft";
+        height: 100%;
+        }
+
+        header{
+            grid-area: hd;
+        }
+        section{
+            height: 32rem;
+            grid-area: sec;
+        }
+
+        main{
+            height: auto;
+            grid-area: main;
+            display: grid;
+            grid-template-areas: 
+            "author article article .";
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto auto auto ;
+            grid-row-gap: 1rem;
+            grid-column-gap: .5rem;
+            padding-top: 3rem;
+        }
+    
+        footer{
+            bottom: 0;
+            grid-area: ft;
+        }
+
+        .author-avatar-section, .share-article, .author-bio-section, .author-bio-section{
+            margin-left: auto;
+            text-align: right;
+        }
+
+
+}

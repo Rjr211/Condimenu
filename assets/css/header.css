@@ -1,0 +1,69 @@
+header{
+    height: 6rem;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index:1000;
+    box-shadow: rgba(0, 0, 0, 0.098) 0px 3px 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    padding: 0px 5%;
+    box-sizing: border-box;
+}
+
+.nav-items{
+    list-style: none;
+}
+
+.nav-items > li {
+    display: inline-block;
+    padding: 7px 5px;
+    font-size: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Raleway",sans-serif;
+    letter-spacing: 1px;
+}
+
+.nav-items > li > a {
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.nav-items > li > a:hover {
+    color: #152238;
+    
+}
+
+header > h1 {
+    margin-left: -4%;
+    text-transform: capitalize;
+}
+
+
+
+.signup{
+    width: 9rem;
+    height: 2.6rem;
+    outline: none;
+    border: none;
+    background-color: #800000;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: .9rem;
+}
+
+.signup:hover{
+    background-color: #790202;
+    cursor: pointer;
+}
+
+
+h1{
+    font-size: 2.2rem;
+    color: #152238;
+    font-family: 'Oswald' ;
+}
